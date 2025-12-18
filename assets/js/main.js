@@ -101,4 +101,11 @@
 	// WOW active
     new WOW().init();
 
+  // Form Clearing
+  window.onbeforeunload = () => {
+  for(const form of document.getElementsByTagName('form')) {
+    form.reset();
+  }
+}
+
 })();
