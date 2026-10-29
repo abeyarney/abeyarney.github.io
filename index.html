@@ -1,829 +1,549 @@
 <!DOCTYPE html>
-<html class="no-js" lang="">
+<html lang="en">
 
 <head>
-  <meta charset="utf-8" />
-  <meta http-equiv="x-ua-compatible" content="ie=edge" />
-  <title>Home | BPR Engineering Lab</title>
-  <meta name="description" content="BPR Engineering Lab">
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="keywords"
-    content="BPR, Engineering, Lab, Bootcamp, Traffic Operations, Transportation Planning, Traffic Safety Analysis, Transportation Engineering">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BPR Engineering Lab | AI-Powered Training for Transportation Professionals</title>
+  <meta name="description"
+    content="Hands-on courses that teach transportation engineers to use Claude, ChatGPT, Gemini and NotebookLM with Synchro, HCS and VISSIM to speed up analysis, automate repetitive tasks, streamline QC and deliver better reports. Live online training with PDH certificates, led by licensed PEs.">
+  <meta name="theme-color" content="#0b0e13">
+  <link rel="canonical" href="https://bprengineeringlab.com/">
 
-  <!-- Favicons -->
-  <link rel="icon" href="assets/img/logo/favicon.ico" type="image/x-icon">
-  <link href="assets/img/logo/apple-touch-icon.png" rel="apple-touch-icon">
-  <link href="assets/img/logo/favicon-32x32.png" rel="icon" type="image/png">
-  <link href="assets/img/logo/favicon-16x16.png" rel="icon" type="image/png">
-  <link href="assets/img/logo/android-chrome-192x192.png" rel="icon" type="image/png">
-  <link href="assets/img/logo/android-chrome-512x512.png" rel="icon" type="image/png">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="BPR Engineering Lab | AI-Powered Training for Transportation Professionals">
+  <meta property="og:description"
+    content="Hands-on courses that build AI tools into real traffic analysis workflows: Synchro, HCS, VISSIM, QC, reporting and presentations. PDH certificates provided.">
+  <meta property="og:url" content="https://bprengineeringlab.com/">
+  <meta property="og:image" content="https://bprengineeringlab.com/assets/img/interchange.jpg">
 
+  <link rel="icon" href="assets/img/logo/favicon.ico" sizes="any">
+  <link rel="icon" href="assets/img/logo/favicon-32x32.png" type="image/png" sizes="32x32">
+  <link rel="apple-touch-icon" href="assets/img/logo/apple-touch-icon.png">
 
-  <!-- ========================= CSS here ========================= -->
-  <link rel="stylesheet" href="assets/css/bootstrap-5.0.0-beta1.min.css" />
-  <link rel="stylesheet" href="assets/css/LineIcons.2.0.css" />
-  <link rel="stylesheet" href="assets/css/tiny-slider.css" />
-  <link rel="stylesheet" href="assets/css/animate.css" />
-  <link rel="stylesheet" href="assets/css/lindy-uikit.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;500;600;700;800;900&family=Overpass+Mono:wght@400;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/site.css?v=15">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "EducationalOrganization",
+    "name": "BPR Engineering Lab",
+    "url": "https://bprengineeringlab.com/",
+    "description": "AI-powered training for transportation professionals: hands-on courses combining AI tools such as Claude, ChatGPT, Gemini and NotebookLM with Synchro, HCS and VISSIM for traffic analysis, QC, reporting and presentations."
+  }
+  </script>
 </head>
 
 <body>
+  <a class="skip" href="#main">Skip to content</a>
 
-  <!-- ========================= preloader start ========================= -->
-  <div class="preloader">
-    <div class="loader">
-      <div class="spinner">
-        <div class="spinner-container">
-          <div class="spinner-rotator">
-            <div class="spinner-left">
-              <div class="spinner-circle"></div>
-            </div>
-            <div class="spinner-right">
-              <div class="spinner-circle"></div>
-            </div>
-          </div>
-        </div>
-      </div>
+  <!-- Announcement -->
+  <a class="announce" href="#contact" data-reserve="synchro">
+    <span class="announce-badge">Coming soon</span>
+    <span class="announce-text"><b>AI + Synchro</b> launches <b>January 8, 2027</b>. Seats are limited.</span>
+    <span class="announce-cta">Reserve your spot <span aria-hidden="true">&rarr;</span></span>
+  </a>
+
+  <!-- Header -->
+  <header class="site-header" id="top">
+    <div class="wrap header-inner">
+      <a class="brand" href="#top" aria-label="BPR Engineering Lab home">
+        <img src="assets/img/logo/bpr-mark.png?v=3" alt="" width="200" height="189">
+        <span class="brand-text">BPR<span>Engineering Lab</span></span>
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="site-nav" class="site-nav" aria-label="Main">
+        <a href="#courses">Courses</a>
+        <a href="#workflow">The workflow</a>
+        <a href="#training">Training options</a>
+        <a href="#instructor">Instructors</a>
+        <a href="certificates.html">Certificates</a>
+        <a class="btn btn-sm" href="#contact">Get started</a>
+      </nav>
     </div>
-  </div>
-  <!-- ========================= preloader end ========================= -->
+  </header>
 
-  <!-- ========================= hero-section-wrapper-5 start ========================= -->
-  <section id="home" class="hero-section-wrapper-5">
+  <main id="main">
 
-    <!-- ========================= header-6 start ========================= -->
-    <header class="header header-6">
-      <div class="navbar-area">
-        <div class="container">
-          <div class="row align-items-center">
-            <div class="col-lg-12">
-              <nav class="navbar navbar-expand-lg">
-                <a class="navbar-brand" href="index.html">
-                  <img src="assets/img/logo/brp-engineering-logo.png" alt="Logo" height="100" />
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#navbarSupportedContent6" aria-controls="navbarSupportedContent6"
-                  aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="toggler-icon"></span>
-                  <span class="toggler-icon"></span>
-                  <span class="toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent6">
-                  <ul id="nav6" class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                      <a class="page-scroll active" href="#home">Home</a>
-                    </li>
-
-                    <li class="nav-item">
-                      <a class="page-scroll" href="#about">About</a>
-                    </li>
-
-                    <li class="nav-item">
-                      <a class="page-scroll" href="#courses">Courses</a>
-                    </li>
-
-
-                    <li class="nav-item">
-                      <a class="page-scroll" href="#advantage">Why Us</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="page-scroll" href="#contact">Contact</a>
-                    </li>
-                  </ul>
-                </div>
-                <!-- navbar collapse -->
-              </nav>
-              <!-- navbar -->
-            </div>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="signal" aria-hidden="true"><i></i><i></i><i></i></span>AI training for traffic engineers</p>
+          <h1>Traffic analysis, <em>accelerated</em> by AI.</h1>
+          <p class="lead">Hands-on courses that teach you to use Claude, ChatGPT, Gemini and NotebookLM across a
+            traffic study: speeding up Synchro, HCS and VISSIM analysis, automating repetitive tasks, streamlining QC, and
+            producing better reports and presentations. Taught live by licensed Professional Engineers who use
+            these workflows on real projects.</p>
+          <div class="hero-actions">
+            <a class="btn" href="#courses">View courses <span aria-hidden="true">&rarr;</span></a>
+            <a class="btn btn-ghost" href="#training">Train your team</a>
           </div>
-          <!-- row -->
         </div>
-        <!-- container -->
+        <figure class="hero-figure">
+          <img src="assets/img/interchange.jpg" alt="Aerial view of a multi-level highway interchange" width="1600"
+            height="1200" fetchpriority="high">
+        </figure>
       </div>
-      <!-- navbar area -->
-    </header>
-    <!-- ========================= header-6 end ========================= -->
 
-    <!-- ========================= hero-5 start ========================= -->
-    <div class="hero-section hero-style-5 img-bg" style="background-image: url('assets/img/hero/hero-5/hero-bg.svg')">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6">
-            <div class="hero-content-wrapper">
-              <h2 class="mb-30 wow fadeInUp" data-wow-delay=".2s">BPR Engineering Lab</h2>
-              <p class="mb-30 wow fadeInUp" data-wow-delay=".4s">An 8-Week Bootcamp into Traffic Operations,
-                Transportation
-                Planning, Traffic Safety Analysis & Career Coaching.</p>
-              <a href="#0" class="button button-lg radius-50 wow fadeInUp" data-wow-delay=".6s">Get Started <i
-                  class="lni lni-chevron-right"></i> </a>
-            </div>
-          </div>
-          <div class="col-lg-6 align-self-end">
-            <div class="hero-image wow fadeInUp" data-wow-delay=".5s">
-              <img src="assets/img/hero/hero-5/new-hero.jpg" alt="">
-            </div>
-          </div>
+      <div class="wrap">
+        <dl class="facts">
+          <div><dt>Format</dt><dd>Live online</dd></div>
+          <div><dt>Approach</dt><dd>Hands-on projects</dd></div>
+          <div><dt>For</dt><dd>Individuals &amp; teams</dd></div>
+          <div><dt>Credit</dt><dd>PDH certificate</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- Tools strip -->
+    <section class="tools" aria-label="Tools covered">
+      <div class="wrap tools-inner">
+        <div class="tool-group">
+          <p>AI tools</p>
+          <ul>
+            <li>Claude</li>
+            <li>ChatGPT</li>
+            <li>Gemini</li>
+            <li>NotebookLM</li>
+          </ul>
+        </div>
+        <span class="tools-plus" aria-hidden="true">+</span>
+        <div class="tool-group">
+          <p>Engineering software</p>
+          <ul>
+            <li>Synchro</li>
+            <li>HCS</li>
+            <li>VISSIM</li>
+            <li>HSM / IHSDM</li>
+          </ul>
         </div>
       </div>
-    </div>
-    <!-- ========================= hero-5 end ========================= -->
+    </section>
 
-  </section>
-  <!-- ========================= hero-section-wrapper-6 end ========================= -->
-
-  <!-- ========================= about About BPR Engineering Lab start ========================= -->
-  <section id="about" class="about-section about-style-4">
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col-xl-8 col-lg-8 mb-3 mx-auto text-center">
-          <div class="about-content-wrapper">
-            <div class="section-title mb-30">
-              <h3 class="mb-25 wow fadeInUp" data-wow-delay=".2s">About BPR Engineering Lab</h3>
-              <p class="wow fadeInUp mb-2" data-wow-delay=".3s">
-                BPR Engineering targets individuals seeking to gain <b class="text-info">traffic, safety, and
-                  transportation
-                  engineering industry -
-                  related experience</b>. The bootcamp provides a structured learning pathway designed to
-                bridge academic
-                knowledge with real-world application. Participants are exposed to essential concepts, practical
-                tools, and
-                analytical techniques used by practicing transportation engineers.
-              </p>
-              <p class="wow fadeInUp" data-wow-delay=".4s">
-                The program focuses on developing <b class="text-info">core competencies in traffic operations
-                  analysis, roadway
-                  safety evaluation,
-                  transportation planning, and engineering documentation</b>. Through hands-on exercises,
-                simulation software
-                exposure,
-                case studies, and mentorship, attendees gain practical insight into how transportation solutions
-                are developed,
-                analyzed, validated, and implemented.
-              </p>
-            </div>
+    <!-- Coming soon spotlight -->
+    <section class="spotlight" id="synchro-ai" aria-labelledby="spotlight-title">
+      <div class="wrap spotlight-grid">
+        <div class="spotlight-copy">
+          <p class="eyebrow"><span class="signal signal-go" aria-hidden="true"><i></i><i></i><i></i></span>Launching January 8, 2027</p>
+          <h2 id="spotlight-title">Synchro, meet <em>AI</em>.</h2>
+          <p class="spotlight-lead">Same Synchro study. A smarter way to run it. Our new AI + Synchro course shows you how
+            to bring AI into every step, from volumes and model setup to timing alternatives, results and the final
+            write-up.</p>
+          <p class="seats-alert"><span class="seats-dot" aria-hidden="true"></span>Limited seats for the first class.
+            <span class="countdown" data-countdown="2027-01-08"></span></p>
+          <ul class="spotlight-list">
+            <li>Build and check Synchro models faster</li>
+            <li>Let AI compare scenarios and summarize delay, queues and LOS</li>
+            <li>Complete a traffic study using AI tools throughout the life of the project</li>
+            <li>Earn PDH credit with your certificate of completion</li>
+          </ul>
+          <div class="hero-actions">
+            <a class="btn" href="#contact" data-reserve="synchro">Reserve your spot <span aria-hidden="true">&rarr;</span></a>
+            <a class="btn btn-ghost" href="#courses">See all courses</a>
           </div>
         </div>
-        <div class="col-xl-6 col-lg-6">
-          <div class="about-content-wrapper">
-            <div class="section-title mb-30">
-              <h3 class="mb-25 wow fadeInUp" data-wow-delay=".2s">The bootcamp is ideal for:</h3>
-              <ul>
-                <li class="wow fadeInUp" data-wow-delay=".35s">
-                  <i class="lni lni-checkmark-circle"></i>
-                  Recent graduates seeking practical experience.
-                </li>
-                <li class="wow fadeInUp" data-wow-delay=".4s">
-                  <i class="lni lni-checkmark-circle"></i>
-                  Career changers entering transportation engineering.
-                </li>
-                <li class="wow fadeInUp" data-wow-delay=".45s">
-                  <i class="lni lni-checkmark-circle"></i>
-                  Junior engineers aiming to upskill.
-                </li>
-                <li class="wow fadeInUp" data-wow-delay=".4s">
-                  <i class="lni lni-checkmark-circle"></i>
-                  Professionals preparing for PE licensure.
-                </li>
-                <li class="wow fadeInUp" data-wow-delay=".45s">
-                  <i class="lni lni-checkmark-circle"></i>
-                  Anyone wanting hands-on industry exposure.
-                </li>
-              </ul>
-            </div>
+
+        <div class="ticket" aria-hidden="true">
+          <div class="ticket-top">
+            <span class="ticket-label">Early reservation</span>
+            <span class="ticket-status">Limited seats</span>
           </div>
-        </div>
-        <div class="col-xl-6 col-lg-6">
-          <div class="about-content-wrapper">
-            <div class="section-title mb-30">
-              <h3 class="mb-25 wow fadeInUp" data-wow-delay=".2s">By the end of the program, participants will have:
-              </h3>
-              <ul>
-                <li class="wow fadeInUp" data-wow-delay=".35s">
-                  <i class="lni lni-checkmark-circle"></i>
-                  A foundational understanding of traffic engineering principles.
-                </li>
-                <li class="wow fadeInUp" data-wow-delay=".4s">
-                  <i class="lni lni-checkmark-circle"></i>
-                  Familiarity with analysis tools such as Synchro, SIDRA, VISSIM, and safety predictive methods.
-                </li>
-                <li class="wow fadeInUp" data-wow-delay=".45s">
-                  <i class="lni lni-checkmark-circle"></i>
-                  Exposure to real project workflows, QC/QA expectations, and reporting standards.
-                </li>
-                <li class="wow fadeInUp" data-wow-delay=".4s">
-                  <i class="lni lni-checkmark-circle"></i>
-                  Confidence to contribute meaningfully to engineering projects.
-                </li>
-              </ul>
-              <p class="wow fadeInUp mb-2" data-wow-delay=".3s">
-                Ultimately, the bootcamp equips attendees with the practical knowledge, software awareness and
-                analytical mindset
-                needed to succeed and grow in consulting, government agencies or research settings.
-              </p>
-            </div>
+          <p class="ticket-title">AI + Synchro</p>
+          <p class="ticket-sub">Intersection Analysis</p>
+          <dl class="ticket-rows">
+            <div><dt>Starts</dt><dd class="ticket-date">Jan 8, 2027</dd></div>
+            <div><dt>Format</dt><dd>Live online</dd></div>
+            <div><dt>Project</dt><dd>Full traffic study</dd></div>
+            <div><dt>Credit</dt><dd>PDH certificate</dd></div>
+            <div><dt>Tools</dt><dd>Synchro + AI</dd></div>
+            <div><dt>Seats</dt><dd>Limited</dd></div>
+          </dl>
+          <div class="ticket-stub">
+            <span>Seat</span><b>Yours?</b>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-  <!-- ========================= about About BPR Engineering Lab end ========================= -->
+    </section>
 
-  <!-- ========================= feature Courses style-5 start ========================= -->
-  <section id="courses" class="feature-section feature-style-5 bg-light">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-xxl-5 col-xl-5 col-lg-7 col-md-8">
-          <div class="section-title text-center mb-60">
-            <h3 class="mb-15 wow fadeInUp" data-wow-delay=".2s">We Will Covering</h3>
-          </div>
+    <!-- The pitch -->
+    <section class="section" id="program">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="kicker">Why this matters now</p>
+          <h2>AI is changing how traffic studies get done. Be the engineer who knows how.</h2>
+          <p>Firms and agencies are under pressure to deliver more studies, faster, without letting quality slip. The
+            engineers who can put AI to work, safely and correctly, are the ones who finish first, catch problems
+            earlier and produce work that stands out.</p>
+          <p>This isn't generic AI training. Every course is built on <strong>workflows proven on real
+              transportation projects</strong>, where AI tools were used to increase speed, improve accuracy and
+            streamline QC. You'll learn exactly where AI helps, where it doesn't, and how to check its work like an
+            engineer.</p>
+        </div>
+
+        <div class="audience">
+          <h3>Built for</h3>
+          <ul class="audience-list">
+            <li><strong>Traffic and transportation engineers</strong> who want to deliver studies faster without
+              cutting corners.</li>
+            <li><strong>Planners and analysts</strong> who spend too much time on data cleanup, memos and slides.
+            </li>
+            <li><strong>Project managers and QC reviewers</strong> who want more consistent, reliable reviews.</li>
+            <li><strong>Agency staff</strong> reviewing consultant work and modernizing internal processes.</li>
+            <li><strong>Students and early-career engineers</strong> who want an edge that most of their peers
+              don't have yet.</li>
+          </ul>
         </div>
       </div>
+    </section>
 
-      <div class="row">
-        <div class="col-lg-4 col-md-6">
-          <div class="single-feature wow fadeInUp" data-wow-delay=".2s">
-            <div class="icon">
-              <i class="lni lni-vector"></i>
-              <svg width="110" height="72" viewBox="0 0 110 72" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M110 54.7589C110 85.0014 85.3757 66.2583 55 66.2583C24.6243 66.2583 0 85.0014 0 54.7589C0 24.5164 24.6243 0 55 0C85.3757 0 110 24.5164 110 54.7589Z"
-                  fill="#EBF4FF" />
-              </svg>
-            </div>
-            <div class="content">
-              <h5>Predictive Safety Analysis (HSM / IHSDM)</h5>
-              <p>Learn how to apply Highway Safety Manual methodologies, NCHRP and HSM tools (IHSDM) to estimate crash
-                frequency and
-                quantify safety benefits.</p>
-            </div>
-          </div>
+    <!-- Courses -->
+    <section class="section section-alt" id="courses">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="kicker">Courses</p>
+          <h2>Pick the skills you need. Put them to work right away.</h2>
+          <p>Take a single course or build the complete toolkit. Every course combines AI tools with industry software
+            and ends with a hands-on project based on real-style project data.</p>
         </div>
-        <div class="col-lg-4 col-md-6">
-          <div class="single-feature wow fadeInUp" data-wow-delay=".4s">
-            <div class="icon">
-              <i class="lni lni-pallet"></i>
-              <svg width="110" height="72" viewBox="0 0 110 72" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M110 54.7589C110 85.0014 85.3757 66.2583 55 66.2583C24.6243 66.2583 0 85.0014 0 54.7589C0 24.5164 24.6243 0 55 0C85.3757 0 110 24.5164 110 54.7589Z"
-                  fill="#EBF4FF" />
-              </svg>
-            </div>
-            <div class="content">
-              <h5>Crash Analysis & Crash Data Analytics</h5>
-              <p>Work with real crash datasets to identify trends, diagnose contributing factors, and develop
-                evidence-based safety insights and recommendations.</p>
-            </div>
-          </div>
+
+        <div class="courses">
+          <article class="course">
+            <span class="course-no">01</span>
+            <h3>Fundamentals of AI Applied to Practical Engineering</h3>
+            <p>How AI tools work, which tool fits which engineering task, prompting for technical work, the limits you
+              must understand, and how to have AI build simple formulas and templates that automate routine steps.</p>
+            <p class="course-project"><b>Project:</b> Build your own AI toolkit and apply it to everyday engineering
+              tasks.</p>
+            <div class="tags"><span class="tag">Claude</span><span class="tag">ChatGPT</span><span class="tag">Gemini</span><span class="tag tag-pdh">PDH</span></div>
+          </article>
+
+          <article class="course course-soon">
+            <span class="course-no">02</span>
+            <span class="soon-badge">Starts Jan 8</span>
+            <h3>AI + Synchro: Intersection Analysis</h3>
+            <p>Speed up volume development and model setup, automate repetitive steps, compare signal timing
+              alternatives, and use AI to interpret and summarize delay, queue and LOS results.</p>
+            <p class="course-project"><b>Project:</b> Complete a traffic study using AI tools throughout the
+              life of the project.</p>
+            <div class="tags"><span class="tag">Synchro</span><span class="tag">AI tools</span><span class="tag tag-pdh">PDH</span></div>
+            <a class="course-reserve" href="#contact" data-reserve="synchro">Reserve your spot <span aria-hidden="true">&rarr;</span></a>
+          </article>
+
+          <article class="course">
+            <span class="course-no">03</span>
+            <h3>AI + HCS: Capacity Analysis</h3>
+            <p>Apply AI to freeway and intersection capacity analysis: preparing inputs, checking them against HCM
+              methods, summarizing multiple scenarios and explaining results clearly.</p>
+            <p class="course-project"><b>Project:</b> Run a freeway capacity analysis and present Level of Service
+              results in plain language.</p>
+            <div class="tags"><span class="tag">HCS</span><span class="tag">AI tools</span><span class="tag tag-pdh">PDH</span></div>
+          </article>
+
+          <article class="course">
+            <span class="course-no">04</span>
+            <h3>AI + VISSIM: Microsimulation</h3>
+            <p>Use AI to plan and set up microsimulation models, work through calibration, process and compare
+              simulation outputs, and explain results to clients and reviewers.</p>
+            <p class="course-project"><b>Project:</b> Build and calibrate a VISSIM model, then summarize and present
+              the results with AI support.</p>
+            <div class="tags"><span class="tag">VISSIM</span><span class="tag">AI tools</span><span class="tag tag-pdh">PDH</span></div>
+          </article>
+
+          <article class="course">
+            <span class="course-no">05</span>
+            <h3>Streamlined QC with AI</h3>
+            <p>Build reusable AI-assisted QC checklists and review prompts that flag errors, compare scenarios and
+              keep deliverables consistent.</p>
+            <p class="course-project"><b>Project:</b> QC review of a sample traffic study, documenting the issues
+              you find.</p>
+            <div class="tags"><span class="tag">QA/QC</span><span class="tag">AI tools</span><span class="tag tag-pdh">PDH</span></div>
+          </article>
+
+          <article class="course">
+            <span class="course-no">06</span>
+            <h3>AI + Predictive Safety Analysis</h3>
+            <p>Apply AI to crash data and Highway Safety Manual predictive methods: organize crash datasets, identify
+              trends and contributing factors, set up HSM and IHSDM analyses, and explain safety benefits clearly.</p>
+            <p class="course-project"><b>Project:</b> Complete a predictive safety evaluation and present the
+              findings with AI support.</p>
+            <div class="tags"><span class="tag">HSM</span><span class="tag">IHSDM</span><span class="tag">AI tools</span><span class="tag tag-pdh">PDH</span></div>
+          </article>
+
+          <article class="course">
+            <span class="course-no">07</span>
+            <h3>AI for Reports &amp; Presentations</h3>
+            <p>Turn manuals, standards and project files into a searchable knowledge base with NotebookLM, then
+              draft technical memos and client-ready slides.</p>
+            <p class="course-project"><b>Project:</b> Produce a technical memo and stakeholder presentation from a
+              completed analysis.</p>
+            <div class="tags"><span class="tag">NotebookLM</span><span class="tag">AI tools</span><span class="tag tag-pdh">PDH</span></div>
+          </article>
         </div>
-        <div class="col-lg-4 col-md-6">
-          <div class="single-feature wow fadeInUp" data-wow-delay=".6s">
-            <div class="icon">
-              <i class="lni lni-stats-up"></i>
-              <svg width="110" height="72" viewBox="0 0 110 72" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M110 54.7589C110 85.0014 85.3757 66.2583 55 66.2583C24.6243 66.2583 0 85.0014 0 54.7589C0 24.5164 24.6243 0 55 0C85.3757 0 110 24.5164 110 54.7589Z"
-                  fill="#EBF4FF" />
-              </svg>
-            </div>
-            <div class="content">
-              <h5>Traffic Volume Development</h5>
-              <p>Gain practical experience in reviewing traffic data, developing and balancing traffic volumes, and
-                applying growth projections for operational and safety analysis.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6">
-          <div class="single-feature wow fadeInUp" data-wow-delay=".2s">
-            <div class="icon">
-              <i class="lni lni-code-alt"></i>
-              <svg width="110" height="72" viewBox="0 0 110 72" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M110 54.7589C110 85.0014 85.3757 66.2583 55 66.2583C24.6243 66.2583 0 85.0014 0 54.7589C0 24.5164 24.6243 0 55 0C85.3757 0 110 24.5164 110 54.7589Z"
-                  fill="#EBF4FF" />
-              </svg>
-            </div>
-            <div class="content">
-              <h5>Freeway Capacity Analysis</h5>
-              <p>Conduct freeway operations assessments from start to end, evaluate Level of Service, and interpret
-                performance results.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6">
-          <div class="single-feature wow fadeInUp" data-wow-delay=".4s">
-            <div class="icon">
-              <i class="lni lni-lock"></i>
-              <svg width="110" height="72" viewBox="0 0 110 72" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M110 54.7589C110 85.0014 85.3757 66.2583 55 66.2583C24.6243 66.2583 0 85.0014 0 54.7589C0 24.5164 24.6243 0 55 0C85.3757 0 110 24.5164 110 54.7589Z"
-                  fill="#EBF4FF" />
-              </svg>
-            </div>
-            <div class="content">
-              <h5>Microsimulation with VISSIM</h5>
-              <p>Learn how to build, code, and analyze microsimulation models, including calibration techniques and
-                visualization methods for real-world problem solving.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6">
-          <div class="single-feature wow fadeInUp" data-wow-delay=".6s">
-            <div class="icon">
-              <i class="lni lni-code"></i>
-              <svg width="110" height="72" viewBox="0 0 110 72" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M110 54.7589C110 85.0014 85.3757 66.2583 55 66.2583C24.6243 66.2583 0 85.0014 0 54.7589C0 24.5164 24.6243 0 55 0C85.3757 0 110 24.5164 110 54.7589Z"
-                  fill="#EBF4FF" />
-              </svg>
-            </div>
-            <div class="content">
-              <h5>Synchro Intersection Analysis</h5>
-              <p>Set up Synchro models, optimize signal timing, and evaluate delays, queues, and intersection
-                performance for existing and future conditions.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6">
-          <div class="single-feature wow fadeInUp" data-wow-delay=".6s">
-            <div class="icon">
-              <i class="lni lni-code"></i>
-              <svg width="110" height="72" viewBox="0 0 110 72" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M110 54.7589C110 85.0014 85.3757 66.2583 55 66.2583C24.6243 66.2583 0 85.0014 0 54.7589C0 24.5164 24.6243 0 55 0C85.3757 0 110 24.5164 110 54.7589Z"
-                  fill="#EBF4FF" />
-              </svg>
-            </div>
-            <div class="content">
-              <h5>Introduction to SIDRA Intersection</h5>
-              <p>Explore SIDRA software with emphasis on roundabout analysis.</p>
-            </div>
-          </div>
+
+        <div class="outcomes">
+          <h3>Every course includes</h3>
+          <ul>
+            <li>Live instruction from licensed Professional Engineers.</li>
+            <li>A hands-on project using AI tools alongside industry software.</li>
+            <li>Guidance on verifying AI output and protecting project data.</li>
+            <li>PDH credit hours, documented with a certificate of completion, attendance record and course
+              materials.</li>
+          </ul>
+          <p class="pdh-note">PDH certificates are accepted by most state licensing boards. Requirements vary by
+            state, so participants should confirm with their board.</p>
         </div>
       </div>
+    </section>
 
-    </div>
-  </section>
-  <!-- ========================= feature Courses style-5 end ========================= -->
+    <!-- Workflow -->
+    <section class="section" id="workflow">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="kicker">The AI-enhanced workflow</p>
+          <h2>AI at every stage of the study. Engineering judgment at every decision.</h2>
+          <p>Together, the courses cover the full life of a traffic study, the same way AI is used on live projects.
+          </p>
+        </div>
 
-  <!-- ========================= about About The Lead Author style-4 start ========================= -->
-  <section id="about" class="about-section about-style-4">
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col-xl-8 col-lg-8 mb-3 mx-auto text-center">
-          <div class="about-content-wrapper">
-            <div class="section-title mb-30">
-              <h3 class="mb-25 wow fadeInUp" data-wow-delay=".2s">About The Lead Author</h3>
-              <p class="wow fadeInUp mb-2" data-wow-delay=".3s">
-                The lead tutor is a licensed Professional Engineer registered in Texas, Arizona, Colorado, and Oklahoma,
-                and holds
-                additional credentials including PTOE and RSP1. With more than 20 years of experience in the traffic,
-                transportation,
-                and roadway safety industry, he has successfully delivered engineering solutions for a wide range of
-                public and
-                private clients across the United States.
-              </p>
-              <p class="wow fadeInUp" data-wow-delay=".4s">
-                He earned a Ph.D. in Transportation Engineering and has worked with reputable consulting firms and
-                agencies, leading
-                and contributing to major corridor studies, safety evaluations, planning initiatives, and operational
-                analyses. His
-                technical depth, combined with hands-on project experience, allows him to bring practical knowledge,
-                mentorship and
-                industry insight into the learning environment.
-              </p>
-            </div>
-          </div>
+        <ol class="workflow">
+          <li>
+            <span class="wf-step">01</span>
+            <h3>Data</h3>
+            <p>Clean and organize traffic counts, balance volumes and apply growth rates much faster.</p>
+          </li>
+          <li>
+            <span class="wf-step">02</span>
+            <h3>Analysis</h3>
+            <p>Set up Synchro, HCS and VISSIM inputs faster, automate repetitive steps and interpret delay, queue and LOS results.</p>
+          </li>
+          <li>
+            <span class="wf-step">03</span>
+            <h3>QC</h3>
+            <p>Run structured AI-assisted checks that catch input errors and inconsistencies before a reviewer does.</p>
+          </li>
+          <li>
+            <span class="wf-step">04</span>
+            <h3>Reporting</h3>
+            <p>Draft clear technical memos and reports, and summarize manuals and guidance with NotebookLM.</p>
+          </li>
+          <li>
+            <span class="wf-step">05</span>
+            <h3>Presentation</h3>
+            <p>Turn results into client-ready slides and plain-language summaries for stakeholders and the public.</p>
+          </li>
+        </ol>
+
+        <aside class="callout">
+          <p class="callout-title">AI assists. Engineers decide.</p>
+          <p>Every course covers verification, data confidentiality and professional responsibility. You'll know how
+            to check AI output against the HCM and agency standards so your work stays defensible and your stamp
+            stays protected.</p>
+        </aside>
+      </div>
+    </section>
+
+    <!-- Training options -->
+    <section class="section section-alt" id="training">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="kicker">Training options</p>
+          <h2>Learn on your own, or bring the whole team up to speed.</h2>
         </div>
-        <div class="col-xl-6 col-lg-6">
-          <div class="about-content-wrapper">
-            <div class="section-title mb-30">
-              <h3 class="mb-25 wow fadeInUp" data-wow-delay=".2s">The bootcamp is ideal for:</h3>
-              <ul>
-                <li class="wow fadeInUp" data-wow-delay=".35s">
-                  <i class="lni lni-checkmark-circle"></i>
-                  Recent graduates seeking practical experience.
-                </li>
-                <li class="wow fadeInUp" data-wow-delay=".4s">
-                  <i class="lni lni-checkmark-circle"></i>
-                  Career changers entering transportation engineering.
-                </li>
-                <li class="wow fadeInUp" data-wow-delay=".45s">
-                  <i class="lni lni-checkmark-circle"></i>
-                  Junior engineers aiming to upskill.
-                </li>
-                <li class="wow fadeInUp" data-wow-delay=".4s">
-                  <i class="lni lni-checkmark-circle"></i>
-                  Professionals preparing for PE licensure.
-                </li>
-                <li class="wow fadeInUp" data-wow-delay=".45s">
-                  <i class="lni lni-checkmark-circle"></i>
-                  Anyone wanting hands-on industry exposure.
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="col-xl-6 col-lg-6">
-          <div class="about-content-wrapper">
-            <div class="section-title mb-30">
-              <h3 class="mb-25 wow fadeInUp" data-wow-delay=".2s">By the end of the program, participants will have:
-              </h3>
-              <ul>
-                <li class="wow fadeInUp" data-wow-delay=".35s">
-                  <i class="lni lni-checkmark-circle"></i>
-                  A foundational understanding of traffic engineering principles.
-                </li>
-                <li class="wow fadeInUp" data-wow-delay=".4s">
-                  <i class="lni lni-checkmark-circle"></i>
-                  Familiarity with analysis tools such as Synchro, SIDRA, VISSIM, and safety predictive methods.
-                </li>
-                <li class="wow fadeInUp" data-wow-delay=".45s">
-                  <i class="lni lni-checkmark-circle"></i>
-                  Exposure to real project workflows, QC/QA expectations, and reporting standards.
-                </li>
-                <li class="wow fadeInUp" data-wow-delay=".4s">
-                  <i class="lni lni-checkmark-circle"></i>
-                  Confidence to contribute meaningfully to engineering projects.
-                </li>
-              </ul>
-              <p class="wow fadeInUp mb-2" data-wow-delay=".3s">
-                Ultimately, the bootcamp equips attendees with the practical knowledge, software awareness and
-                analytical mindset
-                needed to succeed and grow in consulting, government agencies or research settings.
-              </p>
-            </div>
-          </div>
+        <div class="options">
+          <article class="option">
+            <p class="option-label">For individuals</p>
+            <h3>Live online courses</h3>
+            <p>Join a scheduled live session, work through the hands-on project with instructor support, and earn
+              PDH credit toward your license renewal.</p>
+            <ul>
+              <li>Take one course or several</li>
+              <li>Live Q&amp;A with the instructors</li>
+              <li>PDH certificate of completion</li>
+            </ul>
+            <a class="btn" href="#contact">Request the schedule <span aria-hidden="true">&rarr;</span></a>
+          </article>
+          <article class="option option-team">
+            <p class="option-label">For firms &amp; agencies</p>
+            <h3>Team training</h3>
+            <p>Private training for your staff, tailored to your projects, software and review standards, and
+              scheduled around your team.</p>
+            <ul>
+              <li>Choose the courses that fit your work</li>
+              <li>Examples built around your project types</li>
+              <li>PDH certificates for every participant</li>
+            </ul>
+            <a class="btn btn-ghost" href="#contact">Talk to us about your team</a>
+          </article>
         </div>
       </div>
-    </div>
-  </section>
-  <!-- ========================= about About The Lead Author style-4 end ========================= -->
+    </section>
 
-  <!-- ========================= feature style-5 start ========================= -->
-  <section id="" class="feature-section feature-style-5">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-xxl-5 col-xl-5 col-lg-7 col-md-8">
-          <div class="section-title text-center mb-60">
-            <h3 class="mb-15 wow fadeInUp" data-wow-delay=".2s">Why Should Someone Enroll in the Bootcamp?</h3>
-            <p class="wow fadeInUp" data-wow-delay=".4s">
-              This bootcamp is designed for anyone who wants to <b>build practical, job-ready skills in traffic
-                operations, safety
-                analysis, and transportation engineering</b>. Unlike theory-only training, this program offers
-              <b>hands-on
-                learning through guided projects, real datasets, industry software, and mentorship from a seasoned
-                professional
-                engineer</b>.
+    <!-- Instructor -->
+    <section class="section" id="instructor">
+      <div class="wrap instructor">
+        <div class="section-head">
+          <p class="kicker">Your instructors</p>
+          <h2>Learn from engineers who use AI on real projects.</h2>
+          <p>Our courses are taught by practicing transportation engineers who apply AI tools on real projects to
+            speed up analysis, improve accuracy and streamline QC. They share those workflows in every session: what
+            works, what doesn't, and how to use AI responsibly as a licensed professional.</p>
+          <p>The team is led by a licensed Professional Engineer with more than 20 years of experience in traffic,
+            transportation and roadway safety, delivering engineering solutions for public and private clients across
+            the United States.</p>
+        </div>
+        <ul class="creds" aria-label="Lead instructor credentials">
+          <li class="creds-title">Lead instructor</li>
+          <li><b>PE</b><span>Licensed in Texas, Arizona, Colorado &amp; Oklahoma</span></li>
+          <li><b>PTOE</b><span>Professional Traffic Operations Engineer</span></li>
+          <li><b>RSP<sub>1</sub></b><span>Road Safety Professional</span></li>
+          <li><b>Ph.D.</b><span>Transportation Engineering</span></li>
+          <li><b>20+</b><span>Years of U.S. project experience</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Why enroll -->
+    <section class="section section-alt" id="why">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="kicker">Why train with us</p>
+          <h2>Work faster. Check smarter. Stand out.</h2>
+        </div>
+        <div class="reasons">
+          <article>
+            <h3>Get hours back every week</h3>
+            <p>Hand off repetitive data prep, formatting and first drafts to AI, and spend your time on engineering
+              decisions.</p>
+          </article>
+          <article>
+            <h3>Catch errors before reviewers do</h3>
+            <p>Structured AI-assisted QC helps you find input mistakes and inconsistencies early, before they become
+              costly revisions.</p>
+          </article>
+          <article>
+            <h3>Deliver more polished work</h3>
+            <p>Clearer memos, sharper reports and better presentations that clients and agencies notice.</p>
+          </article>
+          <article>
+            <h3>Proven workflows, not hype</h3>
+            <p>Every technique comes from real project experience and is taught with the checks needed to use it
+              professionally.</p>
+          </article>
+          <article>
+            <h3>Earn PDH while you upskill</h3>
+            <p>Every course provides PDH credit hours toward license renewal, plus a hands-on project that shows what
+              you can do.</p>
+          </article>
+          <article>
+            <h3>Learn from practicing PEs</h3>
+            <p>Get direct guidance from seasoned engineers and connect with professionals adopting the same tools.
             </p>
-            <p class="wow fadeInUp" data-wow-delay=".5s">
-              Participants should enroll because they will:
-            </p>
-          </div>
+          </article>
         </div>
       </div>
+    </section>
 
-      <div class="row">
-        <div class="col-lg-4 col-md-6">
-          <div class="single-feature wow fadeInUp" data-wow-delay=".2s">
-            <div class="icon">
-              <i class="lni lni-vector"></i>
-              <svg width="110" height="72" viewBox="0 0 110 72" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M110 54.7589C110 85.0014 85.3757 66.2583 55 66.2583C24.6243 66.2583 0 85.0014 0 54.7589C0 24.5164 24.6243 0 55 0C85.3757 0 110 24.5164 110 54.7589Z"
-                  fill="#EBF4FF" />
-              </svg>
-            </div>
-            <div class="content">
-              <h5>Gain Real-World Skills</h5>
-              <p>You'll learn how traffic studies, safety evaluations, simulation models and operational designs are
-                performed in consulting firms and agencies - skills employers directly look for.</p>
-            </div>
-          </div>
+    <!-- Contact -->
+    <section class="section contact" id="contact">
+      <div class="wrap contact-grid">
+        <div class="contact-info">
+          <p class="kicker">Get started</p>
+          <h2>Put AI to work in your traffic analysis.</h2>
+          <p>Tell us which courses interest you, or what your team needs, and we'll send the upcoming schedule,
+            pricing and next steps.</p>
+          <ul class="contact-list">
+            <li><span>Format</span>Live online courses with hands-on projects and PDH certificates of completion</li>
+            <li><span>Call or text</span><a href="tel:+15126868093">+1 (512) 686-8093</a></li>
+          </ul>
+          <a class="btn btn-whatsapp"
+            href="https://wa.me/13522153538?text=Hi%2C%20I%27m%20interested%20in%20BPR%20Engineering%20Lab%27s%20AI%20training%20courses."
+            target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" fill="currentColor">
+              <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2zm0 18.15h-.01a8.23 8.23 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.23 8.25-8.23 2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.83c0 4.54-3.7 8.22-8.23 8.22zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.13-.15.17-.25.25-.42.08-.17.04-.31-.02-.43-.06-.13-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.14-1.18-.06-.1-.22-.16-.47-.28z"/>
+            </svg>
+            Chat on WhatsApp
+          </a>
         </div>
-        <div class="col-lg-4 col-md-6">
-          <div class="single-feature wow fadeInUp" data-wow-delay=".4s">
-            <div class="icon">
-              <i class="lni lni-pallet"></i>
-              <svg width="110" height="72" viewBox="0 0 110 72" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M110 54.7589C110 85.0014 85.3757 66.2583 55 66.2583C24.6243 66.2583 0 85.0014 0 54.7589C0 24.5164 24.6243 0 55 0C85.3757 0 110 24.5164 110 54.7589Z"
-                  fill="#EBF4FF" />
-              </svg>
-            </div>
-            <div class="content">
-              <h5>Learn From an Industry Expert</h5>
-              <p>Training is led by a <b>licensed Professional Engineer with over 20 years of U.S. project
-                  experience</b>, ensuring that instruction reflects current industry practices and expectations.</p>
-            </div>
+
+        <form class="contact-form" action="https://formspree.io/f/mbdrrevn" method="POST">
+          <input type="text" name="_gotcha" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <input type="hidden" name="_subject" value="New BPR Engineering Lab enquiry">
+          <input type="hidden" name="reservation" value="">
+          <p class="reserve-note" hidden>You're reserving a spot in <b>AI + Synchro</b>, starting <b>January 8, 2027</b>.
+            Seats are limited, so we'll be in touch soon to confirm yours.</p>
+          <div class="field">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" autocomplete="name" required>
           </div>
-        </div>
-        <div class="col-lg-4 col-md-6">
-          <div class="single-feature wow fadeInUp" data-wow-delay=".6s">
-            <div class="icon">
-              <i class="lni lni-stats-up"></i>
-              <svg width="110" height="72" viewBox="0 0 110 72" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M110 54.7589C110 85.0014 85.3757 66.2583 55 66.2583C24.6243 66.2583 0 85.0014 0 54.7589C0 24.5164 24.6243 0 55 0C85.3757 0 110 24.5164 110 54.7589Z"
-                  fill="#EBF4FF" />
-              </svg>
-            </div>
-            <div class="content">
-              <h5>Become More Competitive for Jobs & Promotions</h5>
-              <p>Whether you are entering the field or seeking advancement, this bootcamp strengthens your technical
-                portfolio, positions you for interviews and elevates your credibility.</p>
-            </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" autocomplete="email" required>
           </div>
-        </div>
-        <div class="col-lg-4 col-md-6">
-          <div class="single-feature wow fadeInUp" data-wow-delay=".2s">
-            <div class="icon">
-              <i class="lni lni-code-alt"></i>
-              <svg width="110" height="72" viewBox="0 0 110 72" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M110 54.7589C110 85.0014 85.3757 66.2583 55 66.2583C24.6243 66.2583 0 85.0014 0 54.7589C0 24.5164 24.6243 0 55 0C85.3757 0 110 24.5164 110 54.7589Z"
-                  fill="#EBF4FF" />
-              </svg>
-            </div>
-            <div class="content">
-              <h5>Access Software Exposure That Universities Don't Teach</h5>
-              <p>You'll gain insight into tools such as Synchro, VISSIM, SIDRA, HCS, and IHSDM — exposure rarely
-                available in school programs but essential in practice.</p>
-            </div>
+          <div class="field">
+            <label for="phone">Phone <small>(optional)</small></label>
+            <input id="phone" name="phone" type="tel" autocomplete="tel">
           </div>
-        </div>
-        <div class="col-lg-4 col-md-6">
-          <div class="single-feature wow fadeInUp" data-wow-delay=".4s">
-            <div class="icon">
-              <i class="lni lni-lock"></i>
-              <svg width="110" height="72" viewBox="0 0 110 72" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M110 54.7589C110 85.0014 85.3757 66.2583 55 66.2583C24.6243 66.2583 0 85.0014 0 54.7589C0 24.5164 24.6243 0 55 0C85.3757 0 110 24.5164 110 54.7589Z"
-                  fill="#EBF4FF" />
-              </svg>
-            </div>
-            <div class="content">
-              <h5>Work on Guided Projects That Build Your Portfolio</h5>
-              <p>You will complete real-style assignments you can showcase to employers as evidence of applied
-                competency.</p>
-            </div>
+          <div class="field">
+            <label for="training_for">Training for</label>
+            <select id="training_for" name="training_for">
+              <option>Myself</option>
+              <option>My team or organization</option>
+            </select>
           </div>
-        </div>
-        <div class="col-lg-4 col-md-6">
-          <div class="single-feature wow fadeInUp" data-wow-delay=".6s">
-            <div class="icon">
-              <i class="lni lni-code"></i>
-              <svg width="110" height="72" viewBox="0 0 110 72" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M110 54.7589C110 85.0014 85.3757 66.2583 55 66.2583C24.6243 66.2583 0 85.0014 0 54.7589C0 24.5164 24.6243 0 55 0C85.3757 0 110 24.5164 110 54.7589Z"
-                  fill="#EBF4FF" />
-              </svg>
-            </div>
-            <div class="content">
-              <h5>Receive Coaching, Career Guidance and Mentorship</h5>
-              <p>Beyond software and analysis, the program includes <b>career coaching, resume insight and engineering
-                  process understanding</b> - helping you transition successfully into the profession.</p>
-            </div>
+          <fieldset class="field field-full checks">
+            <legend>Which courses interest you? <small>(choose any)</small></legend>
+            <label><input type="checkbox" name="courses" value="Fundamentals of AI for Engineering"> Fundamentals of AI for Engineering</label>
+            <label><input type="checkbox" name="courses" value="AI + Synchro"> AI + Synchro</label>
+            <label><input type="checkbox" name="courses" value="AI + HCS"> AI + HCS</label>
+            <label><input type="checkbox" name="courses" value="AI + VISSIM"> AI + VISSIM</label>
+            <label><input type="checkbox" name="courses" value="Streamlined QC with AI"> Streamlined QC with AI</label>
+            <label><input type="checkbox" name="courses" value="AI + Predictive Safety"> AI + Predictive Safety</label>
+            <label><input type="checkbox" name="courses" value="AI for Reports & Presentations"> AI for Reports &amp; Presentations</label>
+          </fieldset>
+          <div class="field field-full">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4"
+              placeholder="What would you most like AI to help you with? For teams, roughly how many people?"></textarea>
           </div>
-        </div>
-        <div class="col-lg-4 col-md-6">
-          <div class="single-feature wow fadeInUp" data-wow-delay=".6s">
-            <div class="icon">
-              <i class="lni lni-code"></i>
-              <svg width="110" height="72" viewBox="0 0 110 72" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M110 54.7589C110 85.0014 85.3757 66.2583 55 66.2583C24.6243 66.2583 0 85.0014 0 54.7589C0 24.5164 24.6243 0 55 0C85.3757 0 110 24.5164 110 54.7589Z"
-                  fill="#EBF4FF" />
-              </svg>
-            </div>
-            <div class="content">
-              <h5>Build a Professional Network</h5>
-              <p>You'll connect with fellow participants, engineers and industry professionals - relationships that can
-                open doors.</p>
-            </div>
+          <div class="field-full form-actions">
+            <button class="btn" type="submit">Send enquiry <span aria-hidden="true">&rarr;</span></button>
+            <p class="form-status" role="status" aria-live="polite"></p>
+            <p class="form-privacy">We use your details only to reply and to manage your registration. See our <a href="privacy.html">Privacy Policy</a>.</p>
           </div>
-        </div>
+        </form>
       </div>
+    </section>
+  </main>
 
-    </div>
-  </section>
-  <!-- ========================= feature style-5 end ========================= -->
-
-  <!-- ========================= pricing style-4 start ========================= -->
-  <section id="advantage" class="pricing-section pricing-style-4">
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col-xl-5 col-lg-6">
-          <div class="section-title mb-60">
-            <h3 class="mb-15 wow fadeInUp" data-wow-delay=".2s">Who benefits most?</h3>
-            <p class="wow fadeInUp" data-wow-delay=".4s">
-              This bootcamp equips you with <b>skills, confidence and industry insight</b> so you can stand out in
-              today's competitive transportation engineering job market.
-            </p>
-          </div>
-        </div>
-        <div class="col-xl-7 col-lg-6">
-          <div class="pricing-active-wrapper wow fadeInUp" data-wow-delay=".4s">
-            <div class="pricing-active">
-              <div class="single-pricing-wrapper">
-                <div class="single-pricing">
-                  <h4>Civil engineering students or graduates</h4>
-                </div>
-              </div>
-              <div class="single-pricing-wrapper">
-                <div class="single-pricing">
-                  <h4>Early-career engineers/planners</h4>
-                </div>
-              </div>
-              <div class="single-pricing-wrapper">
-                <div class="single-pricing">
-                  <h4>International graduates seeking U.S. industry alignment</h4>
-                </div>
-              </div>
-              <div class="single-pricing-wrapper">
-                <div class="single-pricing">
-                  <h4>Professionals transitioning into traffic or transportation roles</h4>
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- ========================= pricing style-4 end ========================= -->
-
-  <!-- ========================= contact-style-3 start ========================= -->
-  <section id="contact" class="contact-section contact-style-3 bg-light">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-xxl-5 col-xl-5 col-lg-7 col-md-10">
-          <div class="section-title text-center mb-50">
-            <h3 class="mb-15">Get in touch</h3>
-            <p>Format: <b>Online</b> - 8 Weeks, Saturday & Sunday with Live Sessions + Project Assignments.</p>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-4">
-          <div class="contact-form-wrapper">
-            <form action="https://formspree.io/f/mbdrrevn" method="POST">
-              <div class="row">
-                <input type="text" name="_gotcha" style="display:none" />
-                <div class="col-md-6">
-                  <div class="single-input">
-                    <input type="text" id="name" name="name" class="form-input" placeholder="Name">
-                    <i class="lni lni-user"></i>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="single-input">
-                    <input type="email" id="email" name="email" class="form-input" placeholder="Email">
-                    <i class="lni lni-envelope"></i>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="single-input">
-                    <input type="text" id="number" name="number" class="form-input" placeholder="Number">
-                    <i class="lni lni-phone"></i>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="single-input">
-                    <input type="text" id="subject" name="subject" class="form-input" placeholder="Subject">
-                    <i class="lni lni-text-format"></i>
-                  </div>
-                </div>
-                <div class="col-md-12">
-                  <div class="single-input">
-                    <textarea name="message" id="message" class="form-input" placeholder="Message" rows="6"></textarea>
-                    <i class="lni lni-comments-alt"></i>
-                  </div>
-                </div>
-                <div class="col-md-12">
-                  <div class="form-button">
-                    <button type="submit" class="button"> <i class="lni lni-telegram-original"></i> Submit</button>
-                  </div>
-                </div>
-              </div>
-            </form>
-          </div>
-
-        </div>
-
-        <div class="col-lg-4">
-          <div class="left-wrapper">
-            <div class="row">
-              <div class="col-lg-12 col-md-6">
-                <div class="single-item">
-                  <div class="icon">
-                    <i class="lni lni-phone"></i>
-                  </div>
-                  <div class="text">
-                    <p>+1 352 215 3538</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-12 col-md-6">
-                <div class="single-item">
-                  <div class="icon">
-                    <i class="lni lni-envelope"></i>
-                  </div>
-                  <div class="text">
-                    <p>aayarney@gmail.com</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-12 col-md-6">
-                <div class="single-item">
-                  <div class="icon">
-                    <i class="lni lni-map-marker"></i>
-                  </div>
-                  <div class="text">
-                    <p>Live Sessions Online</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-          </div>
-        </div>
-
-        <div class="col-lg-4">
-          <h3 class="mb-25 wow fadeInUp" data-wow-delay=".2s">Chatbot</h3>
-          <div class="left-wrapper">
-            <zapier-interfaces-chatbot-embed is-popup='false' chatbot-id='cmla2s0ku001um5hbw2rjvmhy' height='600px'
-              width='400px'></zapier-interfaces-chatbot-embed>
-
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- ========================= contact-style-3 end ========================= -->
-
-  <!-- ========================= footer style-4 start ========================= -->
-  <footer class="footer footer-style-4">
-    <div class="container">
-      <div class="widget-wrapper">
-        <div class="row">
-          <div class="col-xl-4 col-lg-4 col-md-6">
-            <div class="footer-widget wow fadeInUp" data-wow-delay=".2s">
-              <div class="logo">
-                <a href="#0"> <img src="assets/img/logo/brp-engineering-logo.png" alt="" width="400"> </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
-            <div class="footer-widget wow fadeInUp" data-wow-delay=".4s">
-              <p class="desc pt-5">
-                This bootcamp equips you with skills, confidence and industry insight so you can stand out in today's
-                competitive
-                transportation engineering job market.
-              </p>
-              <ul class="socials">
-                <li> <a href="#0"> <i class="lni lni-facebook-filled"></i> </a> </li>
-                <li> <a href="#0"> <i class="lni lni-twitter-filled"></i> </a> </li>
-                <li> <a href="#0"> <i class="lni lni-instagram-filled"></i> </a> </li>
-                <li> <a href="#0"> <i class="lni lni-linkedin-original"></i> </a> </li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
-            <div class="footer-widget wow fadeInUp" data-wow-delay=".3s">
-              <h6>Quick Link</h6>
-              <ul class="links">
-                <li> <a href="#home">Home</a> </li>
-                <li> <a href="#about">About</a> </li>
-                <li> <a href="#courses">Courses</a> </li>
-                <li> <a href="#advantage">Why Us</a> </li>
-                <li> <a href="#contact">Contact</a> </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="copyright-wrapper wow fadeInUp" data-wow-delay=".2s">
-        <p>Design and Developed by <a href="https://yohananconsult.github.io" rel="nofollow" target="_blank">Yohanan
-            Consult</a> </p>
-      </div>
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <a class="brand" href="#top" aria-label="BPR Engineering Lab, back to top">
+        <img src="assets/img/logo/bpr-mark.png?v=3" alt="" width="200" height="189" loading="lazy">
+        <span class="brand-text">BPR<span>Engineering Lab</span></span>
+      </a>
+      <nav aria-label="Footer">
+        <a href="#courses">Courses</a>
+        <a href="#workflow">The workflow</a>
+        <a href="#training">Training options</a>
+        <a href="#instructor">Instructors</a>
+        <a href="certificates.html">Certificates</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <p class="fine">&copy; <span id="year">2026</span> BPR Engineering Lab. <a href="privacy.html">Privacy</a>. Site by <a
+          href="https://yohananconsult.github.io" rel="nofollow noopener" target="_blank">Yohanan Consult</a>.</p>
     </div>
   </footer>
-  <!-- ========================= footer style-4 end ========================= -->
 
-  <!-- ========================= scroll-top start ========================= -->
-  <a href="#" class="scroll-top"> <i class="lni lni-chevron-up"></i> </a>
-  <!-- ========================= scroll-top end ========================= -->
-
-
-  <!-- ========================= JS here ========================= -->
-  <script src="assets/js/bootstrap-5.0.0-beta1.min.js"></script>
-  <script src="assets/js/tiny-slider.js"></script>
-  <script src="assets/js/wow.min.js"></script>
-  <script src="assets/js/main.js"></script>
-  <script async type='module'
-    src='https://interfaces.zapier.com/assets/web-components/zapier-interfaces/zapier-interfaces.esm.js'></script>
+  <script src="assets/js/analytics.js?v=2" defer></script>
+  <script src="assets/js/site.js?v=12" defer></script>
 </body>
 
 </html>

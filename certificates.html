@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Certificates, PDH &amp; Course Materials | BPR Engineering Lab</title>
+  <meta name="description"
+    content="Participants can look up their PDH hours, download certificates of completion and access course materials from BPR Engineering Lab courses.">
+  <meta name="theme-color" content="#0b0e13">
+  <link rel="canonical" href="https://bprengineeringlab.com/certificates.html">
+
+  <link rel="icon" href="assets/img/logo/favicon.ico" sizes="any">
+  <link rel="icon" href="assets/img/logo/favicon-32x32.png" type="image/png" sizes="32x32">
+  <link rel="apple-touch-icon" href="assets/img/logo/apple-touch-icon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;500;600;700;800;900&family=Overpass+Mono:wght@400;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/site.css?v=15">
+</head>
+
+<body class="cert-page">
+  <a class="skip" href="#main">Skip to content</a>
+
+  <!-- Header -->
+  <header class="site-header" id="top">
+    <div class="wrap header-inner">
+      <a class="brand" href="index.html" aria-label="BPR Engineering Lab home">
+        <img src="assets/img/logo/bpr-mark.png?v=3" alt="" width="200" height="189">
+        <span class="brand-text">BPR<span>Engineering Lab</span></span>
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="site-nav" class="site-nav" aria-label="Main">
+        <a href="index.html#courses">Courses</a>
+        <a href="index.html#workflow">The workflow</a>
+        <a href="index.html#training">Training options</a>
+        <a href="certificates.html" class="active" aria-current="page">Certificates</a>
+        <a class="btn btn-sm" href="index.html#contact">Get started</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="cert-hero">
+      <div class="wrap cert-grid">
+        <div class="cert-intro">
+          <p class="eyebrow"><span class="signal signal-go" aria-hidden="true"><i></i><i></i><i></i></span>Participants</p>
+          <h1>Your certificates, PDH hours &amp; course materials.</h1>
+          <p class="lead">Look up every course you've taken with us, download your course materials, see your PDH
+            hours, and get your certificates of completion any time you need them for license renewal or an
+            audit.</p>
+          <ul class="cert-points">
+            <li>Access the course materials for each of your courses</li>
+            <li>Download each certificate of completion as a PDF</li>
+            <li>See your total PDH hours across all courses</li>
+            <li>Print or save a PDH summary for your records</li>
+          </ul>
+        </div>
+
+        <form class="cert-form" id="cert-form" novalidate>
+          <h2>Find my records</h2>
+          <p class="cert-form-sub">Use the email you registered with and the certificate ID from any of your
+            certificates.</p>
+          <div class="field">
+            <label for="cert-email">Email</label>
+            <input id="cert-email" name="email" type="email" autocomplete="email" required>
+          </div>
+          <div class="field">
+            <label for="cert-id">Certificate ID</label>
+            <input id="cert-id" name="certid" type="text" placeholder="e.g. BPR-27-A1B2C3" autocomplete="off"
+              autocapitalize="characters" spellcheck="false" required>
+          </div>
+          <button class="btn" type="submit">Find my records <span aria-hidden="true">&rarr;</span></button>
+          <p class="form-status" role="status" aria-live="polite"></p>
+          <p class="cert-help">Lost your certificate ID? <a href="index.html#contact">Contact us</a> or call or text
+            <a href="tel:+15126868093">+1 (512) 686-8093</a> and we'll help.</p>
+        </form>
+      </div>
+    </section>
+
+    <!-- Results (filled in by certificates.js) -->
+    <section class="section cert-results" id="results" hidden>
+      <div class="wrap">
+        <div class="results-head">
+          <div>
+            <p class="kicker">Your records</p>
+            <h2 id="results-name"></h2>
+            <p class="results-email" id="results-email"></p>
+          </div>
+          <div class="results-stats">
+            <div><span id="stat-hours">0</span><small>Total PDH hours</small></div>
+            <div><span id="stat-courses">0</span><small>Courses completed</small></div>
+          </div>
+        </div>
+
+        <div class="records-wrap">
+          <table class="records">
+            <thead>
+              <tr>
+                <th scope="col">Course</th>
+                <th scope="col">Certificate ID</th>
+                <th scope="col">Completed</th>
+                <th scope="col" class="num">PDH</th>
+                <th scope="col"><span class="sr-only">Download</span></th>
+              </tr>
+            </thead>
+            <tbody id="records-body"></tbody>
+            <tfoot>
+              <tr>
+                <th scope="row" colspan="3">Total PDH hours</th>
+                <td class="num" id="records-total">0</td>
+                <td></td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+
+        <div class="results-actions">
+          <button class="btn" type="button" id="print-summary">Download PDH summary <span aria-hidden="true">&darr;</span></button>
+          <button class="btn btn-ghost" type="button" id="lookup-again">Look up another record</button>
+        </div>
+        <p class="pdh-note">Tip: in the print window, choose <b>Save as PDF</b> to keep a digital copy. Your individual
+          certificates of completion remain the official record of each course. Requirements vary by state, so
+          confirm with your licensing board.</p>
+      </div>
+    </section>
+
+    <!-- Printable PDH summary (only shown when printing) -->
+    <div class="print-summary" aria-hidden="true">
+      <div class="ps-head">
+        <div>
+          <p class="ps-org">BPR Engineering Lab</p>
+          <p class="ps-sub">AI-Powered Training for Transportation Professionals</p>
+        </div>
+        <p class="ps-contact">bprengineeringlab.com<br>+1 (512) 686-8093</p>
+      </div>
+      <h1 class="ps-title">PDH Summary</h1>
+      <table class="ps-meta">
+        <tr><th>Participant</th><td id="ps-name"></td></tr>
+        <tr><th>Email</th><td id="ps-email"></td></tr>
+        <tr><th>Generated</th><td id="ps-date"></td></tr>
+      </table>
+      <table class="ps-table">
+        <thead>
+          <tr><th>Course</th><th>Certificate ID</th><th>Completed</th><th class="num">PDH hours</th></tr>
+        </thead>
+        <tbody id="ps-body"></tbody>
+        <tfoot>
+          <tr><th colspan="3">Total PDH hours</th><td class="num" id="ps-total"></td></tr>
+        </tfoot>
+      </table>
+      <p class="ps-note">This summary lists the courses completed through BPR Engineering Lab and the PDH hours
+        awarded for each. Individual certificates of completion, attendance records and course materials are kept
+        on file and are available on request for licensing board audits.</p>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <a class="brand" href="index.html" aria-label="BPR Engineering Lab home">
+        <img src="assets/img/logo/bpr-mark.png?v=3" alt="" width="200" height="189" loading="lazy">
+        <span class="brand-text">BPR<span>Engineering Lab</span></span>
+      </a>
+      <nav aria-label="Footer">
+        <a href="index.html#courses">Courses</a>
+        <a href="index.html#workflow">The workflow</a>
+        <a href="index.html#training">Training options</a>
+        <a href="certificates.html">Certificates</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+      <p class="fine">&copy; <span id="year">2026</span> BPR Engineering Lab. <a href="privacy.html">Privacy</a>. Site by <a
+          href="https://yohananconsult.github.io" rel="nofollow noopener" target="_blank">Yohanan Consult</a>.</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/analytics.js?v=2" defer></script>
+  <script src="assets/js/site.js?v=12" defer></script>
+  <script src="assets/js/certificates.js?v=15" defer></script>
+</body>
+
+</html>
