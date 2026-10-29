@@ -275,7 +275,7 @@ h3 { font-size: 1.2rem; font-weight: 800; }
 }
 
 /* Instructor */
-.instructor { display: grid; grid-template-columns: 1.3fr 1fr; gap: 64px; align-items: start; }
+.instructor { display: block; }
 .instructor .section-head { margin-bottom: 0; }
 .creds { list-style: none; margin: 0; padding: 0; display: grid; gap: 12px; }
 .creds li {
